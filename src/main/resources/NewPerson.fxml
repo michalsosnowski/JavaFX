@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:controller="com.sda.javafx.controller.NewPersonController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <MenuBar>
             <menus>
@@ -62,20 +62,20 @@
                         <Label text="Miasto" GridPane.rowIndex="3" />
                         <Label text="Kod pocztowy" GridPane.rowIndex="4" />
                         <Label text="Numer telefonu" GridPane.rowIndex="5" />
-                        <TextField GridPane.columnIndex="1" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="nameTextField" GridPane.columnIndex="1"/>
+                        <TextField fx:id="surnameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="streetTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="cityTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="postcodeTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="phonenumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                     </children>
                 </GridPane>
             </children>
         </AnchorPane>
         <ButtonBar prefHeight="40.0" prefWidth="496.0">
             <buttons>
-                <Button mnemonicParsing="false" text="Zapisz" />
-                <Button mnemonicParsing="false" text="Anuluj" />
+                <Button onAction="#handleAddNewPerson" mnemonicParsing="false" text="Dodaj" />
+                <Button onAction="#handleCancel" mnemonicParsing="false" text="Anuluj" />
             </buttons>
             <VBox.margin>
                 <Insets right="30.0" />

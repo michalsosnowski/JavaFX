@@ -13,11 +13,17 @@ public class Person {
 
 
     public Person() {
+        this(null,null,null,null,null,null);
     }
 
-    public Person(String name, String lastName) {
-        this.name = new SimpleStringProperty(name);
+
+    public Person(String name, String lastName, String street, String city, String postCode, String telephone) {
+        this.name =new SimpleStringProperty(name);
         this.lastName = new SimpleStringProperty(lastName);
+        this.street = new SimpleStringProperty(street);
+        this.city = new SimpleStringProperty(city);
+        this.postCode = new SimpleStringProperty(postCode);
+        this.telephone = new SimpleStringProperty(telephone);
     }
 
     public String getName() {
@@ -64,7 +70,24 @@ public class Person {
         return telephone.get();
     }
 
+    public void setStreet(String street) {
+        this.street.set(street);
+    }
+
+    public void setCity(String city) {
+        this.city.set(city);
+    }
+
+    public void setPostCode(String postCode) {
+        this.postCode.set(postCode);
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone.set(telephone);
+    }
+
     public StringProperty telephoneProperty() {
+
         return telephone;
     }
 

@@ -2,12 +2,12 @@ package com.sda.javafx.model;
 
 public class PersonJson {
 
-    String name;
-    String lastName;
-    String street;
-    String city;
-    String postCode;
-    String telephone;
+   private String name;
+   private String lastName;
+   private String street;
+   private String city;
+   private String postCode;
+   private String telephone;
 
     public PersonJson(){}
 
