@@ -67,4 +67,12 @@ public class Person {
     public StringProperty telephoneProperty() {
         return telephone;
     }
+
+    public void setName(String name) {
+        this.name.set(name);
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName.set(lastName);
+    }
 }
