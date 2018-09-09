@@ -1,5 +1,9 @@
 <application>
   <component name="LanguageInjectionConfiguration">
+    <injection language="Git" injector-id="xml">
+      <display-name>hibernate-configuration</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("hibernate-configuration")).withNamespace(string().equalTo("http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"))]]></place>
+    </injection>
     <injection language="GenericSQL" injector-id="xml">
       <display-name>modules</display-name>
       <place><![CDATA[xmlTag().withLocalName(string().equalTo("modules")).withNamespace(string().equalTo("http://maven.apache.org/POM/4.0.0"))]]></place>
