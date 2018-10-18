@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="Main" type="CLASS" />
+      <mapping pattern="Zadania_JSP_Servlety" type="PLAIN_TEXT" />
       <mapping pattern="book" type="SQL" />
       <mapping pattern="java" type="yarn.lock" />
     </extensionMap>
